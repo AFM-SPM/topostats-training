@@ -1,72 +1,39 @@
-# The Carpentries Workbench Template Markdown Lesson
+# TopoStats AFM Image Processing Tutorial
 
-This lesson is a template lesson that uses [The Carpentries Workbench][workbench]. 
+This lesson uses [The Carpentries Workbench][workbench] to develop training material for the [TopoStats][topostats]
+Atomic Force Microscopy batch image processing software.
 
-## Note about lesson life cycle stage
-Although the `config.yaml` states the life cycle stage as pre-alpha, **the template is stable and ready to use**. The life cycle stage is preset to `"pre-alpha"` as this setting is appropriate for new lessons initialised using the template.
+The course material is rendered and available [online][topostats-training].
 
-## Create a new repository from this template
+## Code of Conduct
 
-To use this template to start a new lesson repository, 
-make sure you're logged into Github.   
-Visit https://github.com/carpentries/workbench-template-md/generate
-and follow the instructions.
-Checking the 'Include all branches' option will save some time waiting for the first website build
-when your new repository is initialised.
+Please refer to the `CODE_OF_CONDUCT.md` at the top level of this repository.
 
-If you have any questions, contact [@tobyhodges](https://github.com/tobyhodges)
+## Contributing
 
-## Configure a new lesson
+Contributions are welcome, please see the `CONTRIBUTING.md` file at the top level of this repository.
 
-Follow the steps below to
-complete the initial configuration of a new lesson repository built from this template:
+### Building Locally
 
-1. **Make sure GitHub Pages is activated:**
-   navigate to _Settings_,
-   select _Pages_ from the left sidebar,
-   and make sure that `gh-pages` is selected as the branch to build from.
-   If no `gh-pages` branch is available, check _Actions_ to see if the first
-   website build workflows are still running.
-   The branch should become available when those have completed.
-1. **Adjust the `config.yaml` file:**
-   this file contains global parameters for your lesson site.
-   Individual fields within the file are documented with comments (beginning with `#`)
-   At minimum, you should adjust all the fields marked 'FIXME':
-   - `title`
-   - `created`
-   - `keywords`
-   - `life_cycle` (the default, _pre-alpha_, is the appropriate for brand new lessons)
-   - `contact`
-1. **Annotate the repository** with site URL and topic tags:
-   navigate back to the repository landing page and
-   click on the gear wheel/cog icon (similar to ⚙️) 
-   at the top-right of the _About_ box.
-   Check the "Use your GitHub Pages website" option,
-   and [add some keywords and other annotations to describe your lesson](https://cdh.carpentries.org/the-carpentries-incubator.html#topic-tags)
-   in the _Topics_ field.
-   At minimum, these should include:
-   - `lesson`
-   - the life cycle of the lesson (e.g. `pre-alpha`)
-   - the human language the lesson is written in (e.g. `deutsch`)
-1. **Adjust the 
-   `CODE_OF_CONDUCT.md`, `CONTRIBUTING.md`, and `LICENSE.md` files**
-   as appropriate for your project.
-   -  `CODE_OF_CONDUCT.md`: 
-      if you are using this template for a project outside The Carpentries,
-      you should adjust this file to describe 
-      who should be contacted with Code of Conduct reports,
-      and how those reports will be handled.
-   -  `CONTRIBUTING.md`:
-      depending on the current state and maturity of your project,
-      the contents of the template Contributing Guide may not be appropriate.
-      You should adjust the file to help guide contributors on how best
-      to get involved and make an impact on your lesson.
-   -  `LICENSE.md`:
-      in line with the terms of the CC-BY license,
-      you should ensure that the copyright information 
-      provided in the license file is accurate for your project.
-1. **Update this README with 
-   [relevant information about your lesson](https://carpentries.github.io/lesson-development-training/collaborating-newcomers.html#readme)**
-   and delete this section.
+To render these pages locally you need to have [R][r] installed. Instructions are
+[available](https://carpentries.github.io/workbench/#installation) but some additional steps have been taken to make
+sure the environment is reproducible.
 
+Once you have installed the dependencies you can render the pages locally by starting R in the project root and
+running...
+
+``` r
+sandpaper::serve()
+```
+
+This will build the pages and start a local web-server in R and open it in your default browser. These pages are "live"
+and as you edit and save them the web-site will be rebuilt and the pages updated.
+
+## Licensing
+
+Please refer to the `LICENSING.md` at the top level of this repository.
+
+[r]: https://www.r-project.org/
+[topostats]: https://afm-spm.github.io/topostats
+[topostats-training]: https://afm-spm.github.io/topostats-training
 [workbench]: https://carpentries.github.io/sandpaper-docs/
