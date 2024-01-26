@@ -219,39 +219,60 @@
       <hr></nav><main id="main-content" class="main-content"><h1 class="schedule-heading">Summary and Setup</h1>
       
 
-<p>This is a new lesson built with <a href="https://carpentries.github.io/sandpaper-docs" class="external-link">The Carpentries
-Workbench</a>.</p>
+<p>Welcome to the training material for the <a href="https://afm-spm.github.io/TopoStats" class="external-link">TopoStats</a> Atomic Force
+Microscopy image processing software.</p>
 <!-- 
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  -->
 
 
-      <section id="setup"><p>FIXME: Setup instructions live in this document. Please specify the
-tools and the data sets the Learner needs to have installed.</p>
+      <section id="setup"><p>This course teaches you the basics of using <a href="https://afm-spm.github.io/TopoStats" class="external-link">TopoStats</a> to process
+Atomic Force Microscopy images. TopoStats is software written in the <a href="https://www.python.org" class="external-link">Python</a> programming language so you
+will need this installed on your system. Most GNU/Linux and OSX
+operating systems already have Python installed however in order to make
+a reproducible environment available we will guide you through how to
+use <a href="https://docs.conda.io/en/latest/" class="external-link">Conda</a> environments to
+setup and install an isolated environment for installing TopoStats and
+its dependencies.</p>
+<p>Because of the vast heterogeneity in AFM images we have created a
+sample data set for you to work through this tutorial with. If time
+permits at the end of the class you can try processing your own images
+and instructors may be able to help with any problems that you
+encounter.</p>
 <section id="data-sets"><h2 class="section-heading">Data Sets<a class="anchor" aria-label="anchor" href="#data-sets"></a>
 </h2>
 <hr class="half-width"><!--
 FIXME: place any data you want learners to use in `episodes/data` and then use
        a relative link ( [data zip file](data/lesson-data.zip) ) to provide a
        link to it, replacing the example.com link.
---><p>Download the <a href="https://example.com/FIXME" class="external-link">data zip file</a>
-and unzip it to your Desktop</p>
+--><p>Download the <a href="data/topostats-data.zip">data zip file</a> and
+unzip it to your Desktop</p>
 </section><section id="software-setup"><h2 class="section-heading">Software Setup<a class="anchor" aria-label="anchor" href="#software-setup"></a>
 </h2>
-<hr class="half-width"><div id="details" class="callout discussion">
+<hr class="half-width"><div id="conda" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
-<div id="details" class="callout-inner">
-<h3 class="callout-title">Details<a class="anchor" aria-label="anchor" href="#details"></a>
+<div id="conda" class="callout-inner">
+<h3 class="callout-title">Conda<a class="anchor" aria-label="anchor" href="#conda"></a>
 </h3>
 <div class="callout-content">
-<p>Setup for different systems can be presented in dropdown menus via a
-<code>solution</code> tag. They will join to this discussion block, so
-you can give a general overview of the software used in this lesson here
-and fill out the individual operating systems (and potentially add more,
-e.g. online setup) in the solutions blocks.</p>
+<p><a href="https://docs.conda.io/en/latest/" class="external-link">Conda</a> is an
+open-source, cross-platform, language-agnostic package manager and
+environment management system for the popular programming and data
+science languages <a href="https://www.python.org" class="external-link">Python</a> and <a href="https://www.r-project.org/" class="external-link">R</a>. For the purposes of this class
+we will only be using the support for Python.</p>
+<p>We ask that you install Conda on your laptops prior to the class so
+we can maximise the time available for covering the course material. You
+do <em>not</em> need to worry about creating any Conda environments
+before the class starts, we cover that as part of the material.</p>
+<p>The official <a href="https://docs.conda.io/projects/conda/en/stable/user-guide/install/index.html" class="external-link">installation
+instructions</a> are comprehensive and detailed and should get you
+setup.</p>
+<p>If you find you are having problems installing the software please
+contact <a href="mailto:topostats@sheffield.ac.uk">the instructors</a>
+for assistance.</p>
 </div>
 </div>
 </div>
@@ -260,9 +281,10 @@ e.g. online setup) in the solutions blocks.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Windows</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
-<p>Use PuTTY</p>
+<p><a href="https://docs.conda.io/projects/conda/en/stable/user-guide/install/windows.html" class="external-link">Installing
+Conda on Windows</a></p>
 </div>
 </div>
 </div>
@@ -272,9 +294,10 @@ e.g. online setup) in the solutions blocks.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">MacOS</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
-<p>Use Terminal.app</p>
+<p><a href="https://docs.conda.io/projects/conda/en/stable/user-guide/install/macos.html" class="external-link">Installing
+Conda on macOS</a></p>
 </div>
 </div>
 </div>
@@ -284,9 +307,10 @@ e.g. online setup) in the solutions blocks.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3">Linux</h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
-<p>Use Terminal</p>
+<p><a href="https://docs.conda.io/projects/conda/en/stable/user-guide/install/linux.html" class="external-link">Installing
+Conda on Linux</a></p>
 </div>
 </div>
 </div>
@@ -355,8 +379,8 @@ any links that you are not going to use.
   "url": "afm-spm.github.io/topostats-training/index.html",
   "identifier": "afm-spm.github.io/topostats-training/index.html",
   "dateCreated": "2024-01-08",
-  "dateModified": "2024-01-23",
-  "datePublished": "2024-01-23"
+  "dateModified": "2024-01-26",
+  "datePublished": "2024-01-26"
 }
 
   </script><script>
