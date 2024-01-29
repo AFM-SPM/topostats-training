@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>afm-spm.github.io/topostats-training/01-command-line.html</loc>
+  </url>
+  <url>
+    <loc>afm-spm.github.io/topostats-training/02-filedir.html</loc>
+  </url>
+  <url>
+    <loc>afm-spm.github.io/topostats-training/03-create.html</loc>
+  </url>
+  <url>
     <loc>afm-spm.github.io/topostats-training/404.html</loc>
   </url>
   <url>
@@ -17,6 +26,15 @@
   </url>
   <url>
     <loc>afm-spm.github.io/topostats-training/index.html</loc>
+  </url>
+  <url>
+    <loc>afm-spm.github.io/topostats-training/instructor/01-command-line.html</loc>
+  </url>
+  <url>
+    <loc>afm-spm.github.io/topostats-training/instructor/02-filedir.html</loc>
+  </url>
+  <url>
+    <loc>afm-spm.github.io/topostats-training/instructor/03-create.html</loc>
   </url>
   <url>
     <loc>afm-spm.github.io/topostats-training/instructor/404.html</loc>

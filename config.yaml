@@ -59,7 +59,10 @@ contact: 'topostats@sheffield.ac.uk' # FIXME
 
 # Order of episodes in your lesson
 episodes:
-- introduction.md
+- 01-command-line.md
+- 02-filedir.md
+- 03-create.md
+# - introduction.md
 
 # Information for Learners
 learners:
