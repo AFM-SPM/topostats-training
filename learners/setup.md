@@ -14,12 +14,11 @@ with any problems that you encounter.
 
 ## Data Sets
 
-<!--
-FIXME: place any data you want learners to use in `episodes/data` and then use
-       a relative link ( [data zip file](data/lesson-data.zip) ) to provide a
-       link to it, replacing the example.com link.
--->
-Download the [data zip file](data/topostats-data.zip) and unzip it to your Desktop
+The [DNA](data/Minicircles.zip) dataset consists of Bruker AFM files of DNA minicircles (339bp) imaged on a mica surface. The two subfolders contained within show samples of relaxed (∆Lk=0) DNA minicircles, and undertwisted (∆Lk=-3) DNA minicircles. The aim of this dataset analysis is to characterise the geometric differences when the DNA helix is underwound (or negitively supercoiled).
+
+The [Protein](data/Protein.zip) dataset consists of Bruker AFM files of the autophagy receptor protein NDP52 imaged on a mica surface. This protein is represented by a SKICH domain connected through a coiled-coil to a Zinc-finger domain. The analysis of this dataset is to help characterise this flexible protein in comparison to it's crystal structure.
+
+Download the above datasets and and unzip them to your Desktop.
 
 ## Software Setup
 
